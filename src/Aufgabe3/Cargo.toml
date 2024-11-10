@@ -1,0 +1,21 @@
+[package]
+name = "bwinf_aufgabe_3"
+version = "0.1.0"
+edition = "2021"
+default-run = "solve"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "solve"
+path="src/main.rs"
+
+[[bin]]
+name = "bench"
+path = "src/bench.rs"
+
+[dependencies]
+colored = "2.0.0"
+rayon = "1.5.3"
+shared = { path = "../shared" }
+thiserror = "1.0.37"
